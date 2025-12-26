@@ -1,48 +1,51 @@
+using MongoDB.Driver;
+using Microsoft.Extensions.Options;
+
 public class PokemonService : IPokemonService
 {
-    private static List<Pokemon> _pokemons = new()
+    private readonly IMongoCollection<Pokemon> _pokemonCollection;
+
+    public PokemonService(IOptions<DBSettings> dbSettings)
     {
-        new Pokemon("Pikachu"),
-        new Pokemon("Charmander"),
-        new Pokemon("yoo")
-    };
+        var mongoClient = new MongoClient(dbSettings.Value.ConnectionString);
+        var database = mongoClient.GetDatabase(dbSettings.Value.DatabaseName);
+        _pokemonCollection = database.GetCollection<Pokemon>("Pokemon");
+    }
 
     public List<Pokemon> GetAll()
     {
-        return _pokemons;
+        return _pokemonCollection.Find(_ => true).ToList();
     }
 
     public Pokemon? GetByName(string name)
     {
-        return _pokemons.FirstOrDefault(p => p.Name == name);
+        return _pokemonCollection.Find(p => p.Name == name).FirstOrDefault();
     }
 
     public bool Exists(string name)
     {
-        return _pokemons.Any(p => p.Name == name);
+        return _pokemonCollection.Find(p => p.Name == name).Any();
     }
 
     public Pokemon Create(Pokemon pokemon)
     {
-        _pokemons.Add(pokemon);
+        _pokemonCollection.InsertOne(pokemon);
         return pokemon;
     }
 
     public bool Delete(string name)
     {
-        var pokemon = GetByName(name);
-        if (pokemon == null) return false;
-
-        _pokemons.Remove(pokemon);
-        return true;
+        var result = _pokemonCollection.DeleteOne(p => p.Name == name);
+        return result.DeletedCount > 0;
     }
 
     public Pokemon? Train(string name, int amount)
     {
         var pokemon = GetByName(name);
-        if (pokemon == null) return null;
+        if (pokemon == null || pokemon.Id == null) return null;
 
         pokemon.GainExperience(amount);
+        _pokemonCollection.ReplaceOne(p => p.Id == pokemon.Id, pokemon);
         return pokemon;
     }
 }

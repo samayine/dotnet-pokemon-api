@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalControllerAPI/PokemonMinimalControllerAPI.csproj": {}
+    "/home/sam/projects/class/Event-Driven-Labs/PokemonMinimalControllerAPI/PokemonMinimalControllerAPI.csproj": {}
   },
   "projects": {
-    "/home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalControllerAPI/PokemonMinimalControllerAPI.csproj": {
+    "/home/sam/projects/class/Event-Driven-Labs/PokemonMinimalControllerAPI/PokemonMinimalControllerAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalControllerAPI/PokemonMinimalControllerAPI.csproj",
+        "projectUniqueName": "/home/sam/projects/class/Event-Driven-Labs/PokemonMinimalControllerAPI/PokemonMinimalControllerAPI.csproj",
         "projectName": "PokemonMinimalControllerAPI",
-        "projectPath": "/home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalControllerAPI/PokemonMinimalControllerAPI.csproj",
-        "packagesPath": "/home/yordanos-zewge/.nuget/packages/",
-        "outputPath": "/home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalControllerAPI/obj/",
+        "projectPath": "/home/sam/projects/class/Event-Driven-Labs/PokemonMinimalControllerAPI/PokemonMinimalControllerAPI.csproj",
+        "packagesPath": "/home/sam/.nuget/packages/",
+        "outputPath": "/home/sam/projects/class/Event-Driven-Labs/PokemonMinimalControllerAPI/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/yordanos-zewge/.nuget/NuGet/NuGet.Config"
+          "/home/sam/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -42,6 +42,10 @@
               "target": "Package",
               "version": "[8.0.21, )"
             },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[3.5.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -66,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

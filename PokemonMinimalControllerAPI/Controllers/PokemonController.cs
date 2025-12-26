@@ -1,3 +1,7 @@
+using Microsoft.AspNetCore.Mvc;
+
+namespace PokemonMinimalControllerAPI.Controllers;
+
 [ApiController]
 [Route("api/[controller]")]
 public class PokemonController : ControllerBase

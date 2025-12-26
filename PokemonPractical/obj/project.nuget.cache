@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S5C9dBDQdqzCJyLb4Y8c8GzanWxqWbhPuMyO3Hey1v3gYgdsvJar6JyLacugT3VZzQR2UR+V2Yr4dRpBTVq+qQ==",
+  "dgSpecHash": "SnsPDzK2z8VPXmjUFxuwfPcMgS8P2lvQoAFfEsJ3llUHB8Pc5R9l4V8m3hDqRzj7aQfIRrDXXpXu4awgzscirA==",
   "success": true,
-  "projectFilePath": "/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/PokemonPractical.csproj",
+  "projectFilePath": "/home/sam/projects/class/Event-Driven-Labs/PokemonPractical/PokemonPractical.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

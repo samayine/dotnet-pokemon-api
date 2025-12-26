@@ -482,19 +482,19 @@
     ]
   },
   "packageFolders": {
-    "/home/yordanos-zewge/.nuget/packages/": {}
+    "/home/sam/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalAPI/PokemonMinimalAPI.csproj",
+      "projectUniqueName": "/home/sam/projects/class/Event-Driven-Labs/PokemonMinimalAPI/PokemonMinimalAPI.csproj",
       "projectName": "PokemonMinimalAPI",
-      "projectPath": "/home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalAPI/PokemonMinimalAPI.csproj",
-      "packagesPath": "/home/yordanos-zewge/.nuget/packages/",
-      "outputPath": "/home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalAPI/obj/",
+      "projectPath": "/home/sam/projects/class/Event-Driven-Labs/PokemonMinimalAPI/PokemonMinimalAPI.csproj",
+      "packagesPath": "/home/sam/.nuget/packages/",
+      "outputPath": "/home/sam/projects/class/Event-Driven-Labs/PokemonMinimalAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/yordanos-zewge/.nuget/NuGet/NuGet.Config"
+        "/home/sam/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -546,7 +546,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.121/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.122/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

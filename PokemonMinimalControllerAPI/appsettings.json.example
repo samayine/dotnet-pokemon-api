@@ -7,7 +7,8 @@
   },
   "AllowedHosts": "*",
   "DBSettings": {
-    "ConnectionString": "mongodb+srv://pokemon:RootRoot@cluster0.jpi1z5m.mongodb.net/?appName=Cluster0",
+    "ConnectionString": "mongodb+srv://YOUR_USERNAME:YOUR_PASSWORD@cluster0.jpi1z5m.mongodb.net/?appName=Cluster0",
     "DatabaseName": "PokemonDB"
   }
 }
+

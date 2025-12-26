@@ -1,7 +1,10 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddSingleton<IPokemonService, PokemonService>();
+builder.Services.Configure<DBSettings>(
+    builder.Configuration.GetSection("DBSettings")
+);
+builder.Services.AddScoped<IPokemonService, PokemonService>();
 builder.Services.AddControllers();  
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
