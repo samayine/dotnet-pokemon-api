@@ -31,3 +31,4 @@
 /home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalAPI/obj/Debug/net8.0/PokemonMinimalAPI.pdb
 /home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalAPI/obj/Debug/net8.0/PokemonMinimalAPI.genruntimeconfig.cache
 /home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalAPI/obj/Debug/net8.0/ref/PokemonMinimalAPI.dll
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonMinimalAPI/obj/Debug/net8.0/PokemonMinimalAPI.sourcelink.json

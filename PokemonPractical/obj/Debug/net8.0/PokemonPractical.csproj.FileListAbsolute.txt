@@ -12,3 +12,4 @@
 /home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/obj/Debug/net8.0/PokemonPractical.pdb
 /home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/obj/Debug/net8.0/PokemonPractical.genruntimeconfig.cache
 /home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/obj/Debug/net8.0/ref/PokemonPractical.dll
+/home/yordanos-zewge/Documents/class/C#_labs/PokemonPractical/obj/Debug/net8.0/PokemonPractical.sourcelink.json

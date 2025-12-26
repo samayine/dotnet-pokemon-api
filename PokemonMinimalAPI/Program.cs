@@ -64,16 +64,13 @@ app.MapGet("/pokemon/{name}", (string name) => {
 
 // Add a new Pokémon
 app.MapPost("/pokemon", (Pokemon newPokemon) => {
-    // Check if Pokémon already exists
     if (pokemons.Any(p => p.Name == newPokemon.Name))
     {
         return Results.Conflict($"Pokémon '{newPokemon.Name}' already exists");
     }
     
-    // Add to our list
     pokemons.Add(newPokemon);
     
-    // Return 201 Created with location header
     return Results.Created($"/pokemon/{newPokemon.Name}", newPokemon);
 });
 
@@ -86,15 +83,13 @@ app.MapDelete("/pokemon/{name}", (string name) => {
         return Results.NotFound($"Pokémon '{name}' not found");
     }
     
-    // Remove from list
     pokemons.Remove(pokemon);
     
-    // Return success with remaining Pokémon
     return Results.Ok(pokemons);
 });
 
 // Train a Pokémon (gain experience)
-app.MapPost("/pokemon/{name}/train/{amount}", (string name, int amount) => {
+app.MapPatch("/pokemon/{name}/train/{amount}", (string name, int amount) => {
     var pokemon = pokemons.FirstOrDefault(p => p.Name == name);
     
     if (pokemon == null)
@@ -102,10 +97,8 @@ app.MapPost("/pokemon/{name}/train/{amount}", (string name, int amount) => {
         return Results.NotFound($"Pokémon '{name}' not found");
     }
     
-    // Use the GainExperience method from our Pokemon class
     pokemon.GainExperience(amount);
     
-    // Return the updated Pokémon
     return Results.Ok(pokemon);
 });
 
